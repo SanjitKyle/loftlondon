@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLoftTabs();
   initCalculator();
   initBeforeAfterSlider();
-  initPortfolioFilter();
+  initModernGallery();
   initFAQ();
   initScrollTextReveal();
 });
@@ -338,33 +338,64 @@ function initBeforeAfterSlider() {
 }
 
 /* ========================================================
-   5. PORTFOLIO FILTER
+   5. MODERN ARCHITECTURAL BENTO GALLERY & LIGHTBOX
    ======================================================== */
-function initPortfolioFilter() {
-  const filterBtns = document.querySelectorAll('.port-filter-btn');
-  const items = document.querySelectorAll('.port-item');
+function initModernGallery() {
+  const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+  const cards = document.querySelectorAll('.gallery-card');
 
-  if (!filterBtns.length || !items.length) return;
+  if (!filterBtns.length || !cards.length) return;
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      filterBtns.forEach(b => {
-        b.classList.remove('bg-[#0F3875]', 'text-white');
-        b.classList.add('bg-slate-100', 'text-slate-700');
-      });
-      btn.classList.add('bg-[#0F3875]', 'text-white');
-      btn.classList.remove('bg-slate-100', 'text-slate-700');
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
 
       const filter = btn.dataset.filter;
-      items.forEach(item => {
-        if (filter === 'all' || item.classList.contains(filter)) {
-          item.classList.remove('hidden-item');
+      cards.forEach(card => {
+        if (filter === 'all' || card.classList.contains(filter)) {
+          card.classList.remove('gallery-hidden');
         } else {
-          item.classList.add('hidden-item');
+          card.classList.add('gallery-hidden');
         }
       });
     });
   });
+}
+
+function openGalleryLightbox(src, title, spec) {
+  const lightbox = document.getElementById('galleryLightbox');
+  const img = document.getElementById('lightboxImg');
+  const titleEl = document.getElementById('lightboxTitle');
+  const specEl = document.getElementById('lightboxSpec');
+
+  if (!lightbox) return;
+
+  if (img) img.src = src;
+  if (titleEl) titleEl.textContent = title || 'Architectural Showcase';
+  if (specEl) specEl.textContent = spec || 'London Excellent Loft Portfolio';
+
+  lightbox.classList.remove('hidden');
+  lightbox.classList.add('flex');
+  document.body.style.overflow = 'hidden';
+
+  if (window.lucide && typeof window.lucide.createIcons === 'function') {
+    window.lucide.createIcons();
+  }
+}
+
+function closeGalleryLightbox(e) {
+  if (e && e.target && e.target.closest && e.target.closest('#galleryLightbox > div')) {
+    return;
+  }
+  const lightbox = document.getElementById('galleryLightbox');
+  if (lightbox) {
+    lightbox.classList.add('hidden');
+    lightbox.classList.remove('flex');
+    document.body.style.overflow = 'auto';
+    const img = document.getElementById('lightboxImg');
+    if (img) img.src = '';
+  }
 }
 
 /* ========================================================
@@ -476,10 +507,19 @@ function handleModalSubmit(e) {
 // Global exposure
 window.openQuoteModal = openQuoteModal;
 window.closeQuoteModal = closeQuoteModal;
+window.openGalleryLightbox = openGalleryLightbox;
+window.closeGalleryLightbox = closeGalleryLightbox;
 window.handleHeroQuickSubmit = handleHeroQuickSubmit;
 window.handleMainContactSubmit = handleMainContactSubmit;
 window.handleModalSubmit = handleModalSubmit;
 window.lockInEstimate = lockInEstimate;
+
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeGalleryLightbox();
+    closeQuoteModal();
+  }
+});
 
 /* ========================================================
    8. TEXT REVEAL SCROLL OBSERVER (FROM CRAFT-SEVEN-ALPHA)
