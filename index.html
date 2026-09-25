@@ -588,165 +588,64 @@
       </div>
 
       <!-- Asymmetric Architectural Bento Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6" id="galleryGrid">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4" id="galleryGrid">
         
-        <!-- Bento Item 1: Hero Large Feature Card (7 cols, tall) -->
-        <div class="gallery-card lofts lg:col-span-7 relative group rounded-3xl overflow-hidden bg-slate-900 shadow-xl border border-slate-200 h-[440px] sm:h-[500px] cursor-pointer" onclick="openGalleryLightbox('loft-parallax.jpg', 'Victorian Apex Dormer & Juliet Balcony', 'Walthamstow, London E17 · +38m² Floor Area · 8 Weeks')">
-          <img src="loft-parallax.jpg" alt="Victorian Apex Dormer Conversion" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90 group-hover:opacity-100" />
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-          
-          <!-- Top Badges -->
-          <div class="absolute top-5 left-5 right-5 flex items-center justify-between">
-            <span class="px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#0F3875] text-xs font-bold shadow-md flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              Featured Master Suite
-            </span>
-            <div class="w-10 h-10 rounded-full bg-white/90 backdrop-blur-md text-slate-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 shadow-md transform group-hover:scale-110">
-              <i data-lucide="maximize-2" class="w-4 h-4"></i>
-            </div>
-          </div>
-
-          <!-- Bottom Glass Caption -->
-          <div class="absolute bottom-5 left-5 right-5 p-5 rounded-2xl bg-white/95 backdrop-blur-xl border border-white/80 shadow-2xl text-slate-900 transition duration-300">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <div>
-                <span class="text-xs font-bold uppercase tracking-wider text-[#C59B27] block">Walthamstow, London E17</span>
-                <h3 class="font-serif text-xl sm:text-2xl font-bold text-slate-950 mt-0.5">Victorian Apex Dormer &amp; Juliet Balcony</h3>
-                <p class="text-xs text-slate-600 mt-1">Exposed oak rafters, triple Velux skylights, custom eaves storage, and French doors overlooking London roofs.</p>
-              </div>
-              <div class="sm:text-right shrink-0">
-                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200 block">+28% House Value</span>
-                <span class="text-[11px] text-slate-500 mt-1 block">Timeline: <strong>8 Weeks</strong></span>
-              </div>
-            </div>
+        <!-- Card 1: Hero Feature (7 cols, tall) -->
+        <div class="gallery-card lofts lg:col-span-7 relative group rounded-2xl overflow-hidden bg-slate-900 shadow-lg border border-slate-200 h-[440px] sm:h-[500px] cursor-pointer" onclick="openGalleryLightbox('loft-parallax.jpg', 'Victorian Apex Dormer & Juliet Balcony', 'Walthamstow, London E17 · +38m² Floor Area · 8 Weeks')">
+          <img src="loft-parallax.jpg" alt="Victorian Apex Dormer Conversion" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-black/10 group-hover:bg-black/25 transition duration-500"></div>
+          <div class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/90 backdrop-blur-md text-slate-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 shadow-lg transform group-hover:scale-110">
+            <i data-lucide="maximize-2" class="w-4 h-4"></i>
           </div>
         </div>
 
-        <!-- Bento Item 2: Luxury Master Bedroom (5 cols, tall) -->
-        <div class="gallery-card lofts lg:col-span-5 relative group rounded-3xl overflow-hidden bg-slate-900 shadow-xl border border-slate-200 h-[440px] sm:h-[500px] cursor-pointer" onclick="openGalleryLightbox('hero-banner.jpg', 'Triple Velux Attic Bedroom Suite', 'Islington, London N1 · +28m² Floor Area · 7 Weeks')">
-          <img src="hero-banner.jpg" alt="Triple Velux Attic Bedroom Suite" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90 group-hover:opacity-100" />
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/25 to-transparent"></div>
-          
-          <div class="absolute top-5 left-5 right-5 flex items-center justify-between">
-            <span class="px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#0F3875] text-xs font-bold shadow-md">
-              Loft Conversion
-            </span>
-            <div class="w-10 h-10 rounded-full bg-white/90 backdrop-blur-md text-slate-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 shadow-md transform group-hover:scale-110">
-              <i data-lucide="maximize-2" class="w-4 h-4"></i>
-            </div>
-          </div>
-
-          <div class="absolute bottom-5 left-5 right-5 p-5 rounded-2xl bg-white/95 backdrop-blur-xl border border-white/80 shadow-2xl text-slate-900 transition duration-300">
-            <span class="text-xs font-bold uppercase tracking-wider text-[#C59B27] block">Islington, London N1</span>
-            <h3 class="font-serif text-lg sm:text-xl font-bold text-slate-950 mt-0.5">Triple Velux Attic Bedroom Suite</h3>
-            <p class="text-xs text-slate-600 mt-1">Angled vaulted ceiling with 3 solar Velux rooflights, tailored eaves joinery, and warm oak flooring.</p>
-            <div class="flex items-center justify-between mt-3 pt-3 border-t border-slate-100 text-xs">
-              <span class="text-slate-500">Timeline: <strong class="text-slate-900">7 Weeks</strong></span>
-              <span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">+24% Equity</span>
-            </div>
+        <!-- Card 2: Master Bedroom (5 cols, tall) -->
+        <div class="gallery-card lofts lg:col-span-5 relative group rounded-2xl overflow-hidden bg-slate-900 shadow-lg border border-slate-200 h-[440px] sm:h-[500px] cursor-pointer" onclick="openGalleryLightbox('hero-banner.jpg', 'Triple Velux Attic Bedroom Suite', 'Islington, London N1 · +28m² Floor Area · 7 Weeks')">
+          <img src="hero-banner.jpg" alt="Triple Velux Attic Bedroom Suite" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-black/10 group-hover:bg-black/25 transition duration-500"></div>
+          <div class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/90 backdrop-blur-md text-slate-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 shadow-lg transform group-hover:scale-110">
+            <i data-lucide="maximize-2" class="w-4 h-4"></i>
           </div>
         </div>
 
-        <!-- Bento Item 3: Welsh Slate Re-Roofing (4 cols) -->
-        <div class="gallery-card roofing lg:col-span-4 relative group rounded-3xl overflow-hidden bg-slate-900 shadow-xl border border-slate-200 h-[360px] cursor-pointer" onclick="openGalleryLightbox('slate-roofing.jpg', 'Heritage Welsh Slate Re-Roofing', 'Hackney, London E8 · 25-Yr Slate Warranty · 2 Weeks')">
-          <img src="slate-roofing.jpg" alt="Heritage Welsh Slate Re-Roofing" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90 group-hover:opacity-100" />
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-          
-          <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
-            <span class="px-3 py-1 rounded-full bg-slate-900/90 text-white text-xs font-bold backdrop-blur-md">
-              Roofing Specialism
-            </span>
-            <div class="w-8 h-8 rounded-full bg-white/90 text-slate-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition shadow">
-              <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
-            </div>
-          </div>
-
-          <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-white/80 shadow-lg text-slate-900">
-            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500 block">Hackney, London E8</span>
-            <h3 class="font-bold text-base text-slate-900">Welsh Slate Strip &amp; Re-Tiling</h3>
-            <div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-100 text-xs">
-              <span class="text-slate-600">25-Yr Manufacturer Warranty</span>
-              <span class="text-[#0F3875] font-bold">2 Weeks</span>
-            </div>
+        <!-- Card 3: Welsh Slate Re-Roofing (4 cols) -->
+        <div class="gallery-card roofing lg:col-span-4 relative group rounded-2xl overflow-hidden bg-slate-900 shadow-lg border border-slate-200 h-[340px] cursor-pointer" onclick="openGalleryLightbox('slate-roofing.jpg', 'Heritage Welsh Slate Re-Roofing', 'Hackney, London E8 · 25-Yr Slate Warranty · 2 Weeks')">
+          <img src="slate-roofing.jpg" alt="Heritage Welsh Slate Re-Roofing" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-black/10 group-hover:bg-black/25 transition duration-500"></div>
+          <div class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md text-slate-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 shadow-lg transform group-hover:scale-110">
+            <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
           </div>
         </div>
 
-        <!-- Bento Item 4: Hip-to-Gable Semi Suite (4 cols) -->
-        <div class="gallery-card lofts lg:col-span-4 relative group rounded-3xl overflow-hidden bg-slate-900 shadow-xl border border-slate-200 h-[360px] cursor-pointer" onclick="openGalleryLightbox('hip-gable-loft.jpg', 'Semi-Detached Hip-to-Gable Master', 'Clapham, London SW4 · +32m² Floor Area · 8 Weeks')">
-          <img src="hip-gable-loft.jpg" alt="Semi-Detached Hip-to-Gable Master" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90 group-hover:opacity-100" />
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-          
-          <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
-            <span class="px-3 py-1 rounded-full bg-white/90 text-[#0F3875] text-xs font-bold backdrop-blur-md">
-              Hip-to-Gable Loft
-            </span>
-            <div class="w-8 h-8 rounded-full bg-white/90 text-slate-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition shadow">
-              <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
-            </div>
-          </div>
-
-          <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-white/80 shadow-lg text-slate-900">
-            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500 block">Clapham, London SW4</span>
-            <h3 class="font-bold text-base text-slate-900">Semi-Detached Hip-to-Gable Master</h3>
-            <div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-100 text-xs">
-              <span class="text-slate-600">Freestanding Bath &amp; Shower</span>
-              <span class="text-emerald-700 font-bold">+26% Value</span>
-            </div>
+        <!-- Card 4: Hip-to-Gable (4 cols) -->
+        <div class="gallery-card lofts lg:col-span-4 relative group rounded-2xl overflow-hidden bg-slate-900 shadow-lg border border-slate-200 h-[340px] cursor-pointer" onclick="openGalleryLightbox('hip-gable-loft.jpg', 'Semi-Detached Hip-to-Gable Master', 'Clapham, London SW4 · +32m² Floor Area · 8 Weeks')">
+          <img src="hip-gable-loft.jpg" alt="Semi-Detached Hip-to-Gable Master" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-black/10 group-hover:bg-black/25 transition duration-500"></div>
+          <div class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md text-slate-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 shadow-lg transform group-hover:scale-110">
+            <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
           </div>
         </div>
 
-        <!-- Bento Item 5: Ground Floor Extension (4 cols) -->
-        <div class="gallery-card extensions lg:col-span-4 relative group rounded-3xl overflow-hidden bg-slate-900 shadow-xl border border-slate-200 h-[360px] cursor-pointer" onclick="openGalleryLightbox('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85', 'Open-Plan Kitchen Dining Extension', 'Richmond, London TW9 · Bi-Fold Doors · 10 Weeks')">
-          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80" alt="Kitchen Dining Extension" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90 group-hover:opacity-100" />
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-          
-          <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
-            <span class="px-3 py-1 rounded-full bg-white/90 text-slate-800 text-xs font-bold backdrop-blur-md">
-              Home Extension
-            </span>
-            <div class="w-8 h-8 rounded-full bg-white/90 text-slate-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition shadow">
-              <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
-            </div>
-          </div>
-
-          <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-white/80 shadow-lg text-slate-900">
-            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500 block">Richmond, London TW9</span>
-            <h3 class="font-bold text-base text-slate-900">Garden-Facing Kitchen Extension</h3>
-            <div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-100 text-xs">
-              <span class="text-slate-600">Crittall Bi-Folds &amp; Skylights</span>
-              <span class="text-[#0F3875] font-bold">10 Weeks</span>
-            </div>
+        <!-- Card 5: Kitchen Extension (4 cols) -->
+        <div class="gallery-card extensions lg:col-span-4 relative group rounded-2xl overflow-hidden bg-slate-900 shadow-lg border border-slate-200 h-[340px] cursor-pointer" onclick="openGalleryLightbox('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85', 'Open-Plan Kitchen Dining Extension', 'Richmond, London TW9 · Bi-Fold Doors · 10 Weeks')">
+          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80" alt="Kitchen Dining Extension" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-black/10 group-hover:bg-black/25 transition duration-500"></div>
+          <div class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md text-slate-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 shadow-lg transform group-hover:scale-110">
+            <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
           </div>
         </div>
 
-        <!-- Bento Item 6: Camden Conservation Mansard (12 cols, wide panoramic) -->
-        <div class="gallery-card lofts lg:col-span-12 relative group rounded-3xl overflow-hidden bg-slate-900 shadow-xl border border-slate-200 h-[340px] cursor-pointer" onclick="openGalleryLightbox('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85', 'Conservation Mansard Loft Conversion', 'Camden, London NW1 · 72° Slope & Lead Dormers · 9 Weeks')">
-          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="Camden Conservation Mansard" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90 group-hover:opacity-100" />
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent sm:bg-gradient-to-r sm:from-slate-950/90 sm:via-slate-950/40 sm:to-transparent"></div>
-          
-          <div class="absolute top-5 left-5 right-5 flex items-center justify-between">
-            <span class="px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#0F3875] text-xs font-bold shadow-md flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-[#C59B27]"></span>
-              Conservation Area Showcase
-            </span>
-            <div class="w-10 h-10 rounded-full bg-white/90 backdrop-blur-md text-slate-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 shadow-md transform group-hover:scale-110">
-              <i data-lucide="maximize-2" class="w-4 h-4"></i>
-            </div>
-          </div>
-
-          <div class="absolute bottom-5 left-5 right-5 sm:right-auto sm:max-w-xl p-5 sm:p-6 rounded-2xl bg-white/95 backdrop-blur-xl border border-white/80 shadow-2xl text-slate-900 transition duration-300">
-            <span class="text-xs font-bold uppercase tracking-wider text-[#C59B27] block">Camden, London NW1</span>
-            <h3 class="font-serif text-xl sm:text-2xl font-bold text-slate-950 mt-0.5">Camden 72° Traditional Mansard Suite</h3>
-            <p class="text-xs text-slate-600 mt-1">Full conservation-compliant mansard with handcrafted lead dormer cheeks, bespoke timber sash windows, and luxury dressing room.</p>
-            <div class="flex items-center gap-4 mt-3 pt-3 border-t border-slate-100 text-xs">
-              <span class="text-slate-500">Timeline: <strong class="text-slate-900">9 Weeks</strong></span>
-              <span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">+29% House Value</span>
-              <span class="text-[#0F3875] font-bold hidden sm:inline">&middot; Conservation Approved</span>
-            </div>
+        <!-- Card 6: Camden Mansard (full width panoramic) -->
+        <div class="gallery-card lofts lg:col-span-12 relative group rounded-2xl overflow-hidden bg-slate-900 shadow-lg border border-slate-200 h-[320px] cursor-pointer" onclick="openGalleryLightbox('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85', 'Conservation Mansard Loft Conversion', 'Camden, London NW1 · 72° Slope & Lead Dormers · 9 Weeks')">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="Camden Conservation Mansard" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-black/10 group-hover:bg-black/25 transition duration-500"></div>
+          <div class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/90 backdrop-blur-md text-slate-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 shadow-lg transform group-hover:scale-110">
+            <i data-lucide="maximize-2" class="w-4 h-4"></i>
           </div>
         </div>
 
       </div>
+
 
       <!-- Bottom Interactive Callout Bar -->
       <div class="mt-12 p-6 sm:p-8 rounded-3xl bg-slate-900 text-white flex flex-col md:flex-row items-center justify-between gap-6 border border-slate-800 shadow-xl">

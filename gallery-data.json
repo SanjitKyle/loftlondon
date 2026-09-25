@@ -1,0 +1,290 @@
+[
+  {
+    "id": 1,
+    "file": "images/gallery/work-in-progress-01.jpg",
+    "title": "Twin Velux Rooflights & Recticel Apex Insulation",
+    "category": "insulation",
+    "tag": "Insulation & Velux",
+    "stage": "Thermal & Framing Stage",
+    "description": "100mm foil-faced PIR insulation tightly fitted between C24 rafters with structural red RSJ steel beam and twin Velux rooflights."
+  },
+  {
+    "id": 2,
+    "file": "images/gallery/work-in-progress-02.jpg",
+    "title": "Loft Ridge Beam & High-Performance Thermal Envelope",
+    "category": "insulation",
+    "tag": "Insulation & Velux",
+    "stage": "Thermal Envelope",
+    "description": "Continuous insulation barrier preventing cold bridging, pre-wired for recessed LED downlighters across pitched roofline."
+  },
+  {
+    "id": 3,
+    "file": "images/gallery/work-in-progress-03.jpg",
+    "title": "Structural C24 Timber Dormer Wall Studding",
+    "category": "framing",
+    "tag": "Structural Framing",
+    "stage": "First-Fix Carpentry",
+    "description": "Laser-aligned vertical stud walling creating maximum head height for full master en-suite bathroom."
+  },
+  {
+    "id": 4,
+    "file": "images/gallery/work-in-progress-04.jpg",
+    "title": "Roof Valley & Ridge Timber Framing Structure",
+    "category": "framing",
+    "tag": "Structural Framing",
+    "stage": "Roof Restructuring",
+    "description": "Bespoke cut-roof timbers tied into existing party wall load points to support extended floor loadings."
+  },
+  {
+    "id": 5,
+    "file": "images/gallery/work-in-progress-05.jpg",
+    "title": "Dormer Window Reveal & Vapour Control Layer",
+    "category": "insulation",
+    "tag": "Insulation & Velux",
+    "stage": "Vapour Barrier",
+    "description": "Precision taped joints sealing PIR boards against condensation and heat loss before plasterboarding."
+  },
+  {
+    "id": 6,
+    "file": "images/gallery/work-in-progress-06.jpg",
+    "title": "Eaves Storage Studwork & Electrical First-Fix",
+    "category": "framing",
+    "tag": "Structural Framing",
+    "stage": "Internal Carpentry",
+    "description": "Low-pitch eaves knee wall with framed access hatches and dedicated electrical trunking runs."
+  },
+  {
+    "id": 7,
+    "file": "images/gallery/work-in-progress-07.jpg",
+    "title": "Bespoke Attic Stairwell Enclosure Framing",
+    "category": "framing",
+    "tag": "Structural Framing",
+    "stage": "Staircase Access",
+    "description": "Fire-rated structural enclosure meeting London Building Regulations Part K staircase headroom standards."
+  },
+  {
+    "id": 8,
+    "file": "images/gallery/work-in-progress-08.jpg",
+    "title": "Apex Collar Ties & Structural Steel Connection",
+    "category": "framing",
+    "tag": "Structural Framing",
+    "stage": "Heavy Structural",
+    "description": "Bolted steel splice plates anchoring timber purlins to high-tensile RSJ universal beams."
+  },
+  {
+    "id": 9,
+    "file": "images/gallery/work-in-progress-09.jpg",
+    "title": "Rear Dormer External GRP Flat Roof Weathering",
+    "category": "roofing",
+    "tag": "Roofing & Exteriors",
+    "stage": "External Waterproofing",
+    "description": "Seamless fibreglass seamless topcoat with perimeter drip trims and lead flashing into chimney abutments."
+  },
+  {
+    "id": 10,
+    "file": "images/gallery/work-in-progress-10.jpg",
+    "title": "Natural Welsh Slate Retiling & Breathable Membrane",
+    "category": "roofing",
+    "tag": "Roofing & Exteriors",
+    "stage": "Roof Slating",
+    "description": "Hand-graded roofing slates fixed with copper nails over Tyvek non-tear breathable underlay."
+  },
+  {
+    "id": 11,
+    "file": "images/gallery/work-in-progress-11.jpg",
+    "title": "Dormer Cheek Cladding & Code 4 Lead Flashing",
+    "category": "roofing",
+    "tag": "Roofing & Exteriors",
+    "stage": "Leadwork & Cheeks",
+    "description": "Milled sheet lead dressed neatly over stepped tile courses providing lifetime leak prevention."
+  },
+  {
+    "id": 12,
+    "file": "images/gallery/work-in-progress-12.jpg",
+    "title": "Master En-Suite First Fix Plumbing & Drainage",
+    "category": "finished",
+    "tag": "Finished Spaces",
+    "stage": "Plumbing Installation",
+    "description": "Acoustic-wrapped waste pipes and concealed shower valve housings positioned prior to moisture-resistant boarding."
+  },
+  {
+    "id": 13,
+    "file": "images/gallery/work-in-progress-13.jpg",
+    "title": "Plasterboard Lining & Soundproofing Membrane",
+    "category": "insulation",
+    "tag": "Insulation & Velux",
+    "stage": "Drylining Stage",
+    "description": "Dual-layer high-density acoustic plasterboard installed on resilient bars for superior airborne noise dampening."
+  },
+  {
+    "id": 14,
+    "file": "images/gallery/work-in-progress-14.jpg",
+    "title": "Precision Velux Roof Window Flashing Kit",
+    "category": "insulation",
+    "tag": "Insulation & Velux",
+    "stage": "Window Installation",
+    "description": "Factory-sealed recessed flashing kit integrated seamlessly with surrounding interlocking tiles."
+  },
+  {
+    "id": 15,
+    "file": "images/gallery/work-in-progress-15.jpg",
+    "title": "Rear Dormer Juliet Balcony French Door Aperture",
+    "category": "finished",
+    "tag": "Finished Spaces",
+    "stage": "Glazing Aperture",
+    "description": "Double glazed safety toughened glass patio opening ready for architectural glass Juliet railing."
+  },
+  {
+    "id": 16,
+    "file": "images/gallery/work-in-progress-16.jpg",
+    "title": "Heavy-Duty Floor Joist Sistering & Levelling",
+    "category": "framing",
+    "tag": "Structural Framing",
+    "stage": "Floor Strengthening",
+    "description": "220mm engineered timber joists bolted to existing ceiling ties to support domestic live loads."
+  },
+  {
+    "id": 17,
+    "file": "images/gallery/work-in-progress-17.jpg",
+    "title": "Chimney Breast Support Gallows Brackets & Trimming",
+    "category": "framing",
+    "tag": "Structural Framing",
+    "stage": "Masonry Support",
+    "description": "Building control approved steel gallows system supporting retained chimney masonry aloft."
+  },
+  {
+    "id": 18,
+    "file": "images/gallery/work-in-progress-18.jpg",
+    "title": "Panoramic London Skyline View from New Dormer",
+    "category": "finished",
+    "tag": "Finished Spaces",
+    "stage": "Exterior Outlook",
+    "description": "Expansive high-elevation perspective overlooking neighborhood gardens and London landmarks."
+  },
+  {
+    "id": 19,
+    "file": "images/gallery/work-in-progress-19.jpg",
+    "title": "Skimmed Vaulted Ceiling & Recessed Lighting Bores",
+    "category": "finished",
+    "tag": "Finished Spaces",
+    "stage": "Plastering Stage",
+    "description": "Mirror-smooth British Gypsum multi-finish plaster skim coat prepared for mist-coat priming."
+  },
+  {
+    "id": 20,
+    "file": "images/gallery/work-in-progress-20.jpg",
+    "title": "Custom Eaves Wardrobe Framing & Inset Shelving",
+    "category": "finished",
+    "tag": "Finished Spaces",
+    "stage": "Bespoke Joinery",
+    "description": "Handcrafted carpentry utilizing awkward pitched roof recesses for maximized storage utility."
+  },
+  {
+    "id": 21,
+    "file": "images/gallery/work-in-progress-21.jpg",
+    "title": "Anthracite Contemporary Dormer External Cladding",
+    "category": "roofing",
+    "tag": "Roofing & Exteriors",
+    "stage": "Modern Exterior",
+    "description": "Low-maintenance composite timber effect vertical cladding with hidden stainless steel fixings."
+  },
+  {
+    "id": 22,
+    "file": "images/gallery/work-in-progress-22.jpg",
+    "title": "Waterproof Wetroom Tanking & Porcelain Tiling",
+    "category": "finished",
+    "tag": "Finished Spaces",
+    "stage": "En-Suite Bath",
+    "description": "Schluter-KERDI waterproof membrane applied throughout shower recess before marble porcelain tiling."
+  },
+  {
+    "id": 23,
+    "file": "images/gallery/work-in-progress-23.jpg",
+    "title": "Double Glazed Top-Hung Velux Escape Window",
+    "category": "insulation",
+    "tag": "Insulation & Velux",
+    "stage": "Safety & Light",
+    "description": "Emergency egress compliant escape window providing unobstructed panoramic views and airflow."
+  },
+  {
+    "id": 24,
+    "file": "images/gallery/work-in-progress-24.jpg",
+    "title": "Parapet Wall Lead DPC & Fire Separation Party Wall",
+    "category": "roofing",
+    "tag": "Roofing & Exteriors",
+    "stage": "Party Wall Detail",
+    "description": "Continuous fireproof mineral wool cavity barrier installed against neighboring London party wall."
+  },
+  {
+    "id": 25,
+    "file": "images/gallery/work-in-progress-25.jpg",
+    "title": "Bespoke Oak Handrail & Spindle Staircase Flight",
+    "category": "finished",
+    "tag": "Finished Spaces",
+    "stage": "Staircase Install",
+    "description": "Architectural staircase built precisely to match the pitch and period mouldings of the original hallway."
+  },
+  {
+    "id": 26,
+    "file": "images/gallery/work-in-progress-26.jpg",
+    "title": "Warm Roof Vapour Barrier & Rigid Insulation Layer",
+    "category": "insulation",
+    "tag": "Insulation & Velux",
+    "stage": "Warm Deck Flat Roof",
+    "description": "Cross-laminated thermal decking exceeding Part L Building Regulations with U-value < 0.13 W/m²K."
+  },
+  {
+    "id": 27,
+    "file": "images/gallery/work-in-progress-27.jpg",
+    "title": "Completed Master Bedroom Loft with Oak Flooring",
+    "category": "finished",
+    "tag": "Finished Spaces",
+    "stage": "Completed Bedroom",
+    "description": "Finished warm, bright London loft master bedroom with integrated bedside pendant drops and dimmer mood lighting."
+  },
+  {
+    "id": 28,
+    "file": "images/gallery/work-in-progress-28.jpg",
+    "title": "Luxury Walk-In Rain Shower En-Suite with Brass Accents",
+    "category": "finished",
+    "tag": "Finished Spaces",
+    "stage": "Completed Bath",
+    "description": "Frameless fluted glass enclosure with brushed brass thermostatic mixer shower and vanity unit."
+  },
+  {
+    "id": 29,
+    "file": "images/gallery/work-in-progress-29.jpg",
+    "title": "External Scaffolding & Site Safety Protection",
+    "category": "roofing",
+    "tag": "Roofing & Exteriors",
+    "stage": "Site Safety",
+    "description": "TG20 compliant scaffolding with temporary tin-hat weather protection safeguarding the home throughout structural cut."
+  },
+  {
+    "id": 30,
+    "file": "images/gallery/work-in-progress-30.jpg",
+    "title": "Ridge Ventilation Strip & Dry-Fix Ridge Tiles",
+    "category": "roofing",
+    "tag": "Roofing & Exteriors",
+    "stage": "Roof Ventilation",
+    "description": "Mortar-free mechanical dry ridge system providing continuous airflow to eliminate loft condensation."
+  },
+  {
+    "id": 31,
+    "file": "images/gallery/work-in-progress-31.jpg",
+    "title": "Architectural Skylight Shaft & Solar Sensor Blinds",
+    "category": "insulation",
+    "tag": "Insulation & Velux",
+    "stage": "Skylight Detail",
+    "description": "Splayed internal light shaft lined and painted in brilliant white reflecting maximum daylight deep into the stairwell."
+  },
+  {
+    "id": 32,
+    "file": "images/gallery/work-in-progress-32.jpg",
+    "title": "Full Loft Transformation Handover & Client Snag Sign-Off",
+    "category": "finished",
+    "tag": "Finished Spaces",
+    "stage": "Final Completion",
+    "description": "Spotlessly cleaned and fully signed-off loft conversion ready for London homeowner furnishing and enjoyment."
+  }
+]
