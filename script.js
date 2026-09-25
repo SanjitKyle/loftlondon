@@ -515,14 +515,18 @@ function initPreloader() {
   const statusText = document.getElementById('loaderStatus');
 
   const steps = [
-    { at: 28, text: "Structural Feasibility..." },
-    { at: 58, text: "Architectural Drawings..." },
-    { at: 85, text: "Velux & Roofline Craft..." },
-    { at: 100, text: "Welcome to London Lofts" }
+    { at: 22, text: "Laying Foundation & Brickwork..." },
+    { at: 48, text: "Framing Main Roof Structure..." },
+    { at: 75, text: "Constructing Bespoke Loft Dormer..." },
+    { at: 94, text: "Illuminating Finished Living Space..." },
+    { at: 100, text: "Welcome to London Excellent Loft" }
   ];
 
   let progress = 0;
   let isComplete = false;
+  const totalDurationMs = 2400; // 2.4 seconds for complete home drawing
+  const intervalMs = 40;
+  const increment = 100 / (totalDurationMs / intervalMs);
 
   function finishLoader() {
     if (isComplete) return;
@@ -530,14 +534,14 @@ function initPreloader() {
     progress = 100;
     if (bar) bar.style.width = '100%';
     if (percentText) percentText.textContent = '100%';
-    if (statusText) statusText.textContent = 'Welcome to London Lofts';
+    if (statusText) statusText.textContent = 'Welcome to London Excellent Loft';
 
     setTimeout(() => {
       preloader.classList.add('is-hidden');
       setTimeout(() => {
         preloader.style.display = 'none';
-      }, 650);
-    }, 250);
+      }, 700);
+    }, 450);
   }
 
   const interval = setInterval(() => {
@@ -545,7 +549,7 @@ function initPreloader() {
       clearInterval(interval);
       return;
     }
-    progress += Math.floor(Math.random() * 12) + 8;
+    progress += increment;
     if (progress >= 100) {
       progress = 100;
       clearInterval(interval);
@@ -553,17 +557,12 @@ function initPreloader() {
       return;
     }
 
-    if (bar) bar.style.width = progress + '%';
-    if (percentText) percentText.textContent = progress + '%';
+    if (bar) bar.style.width = Math.round(progress) + '%';
+    if (percentText) percentText.textContent = Math.round(progress) + '%';
 
     const currentStep = steps.find(s => progress <= s.at);
     if (currentStep && statusText) {
       statusText.textContent = currentStep.text;
     }
-  }, 65);
-
-  // Safety trigger on window load with minimum display for smooth branding
-  window.addEventListener('load', () => {
-    setTimeout(finishLoader, 850);
-  });
+  }, intervalMs);
 }
