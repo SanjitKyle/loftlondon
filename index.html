@@ -52,6 +52,69 @@
 </head>
 <body class="bg-white text-slate-800 font-sans antialiased selection:bg-[#0F3875] selection:text-white overflow-x-hidden">
 
+  <!-- ARCHITECTURAL HOME PRELOADER (CRAFT-SEVEN-ALPHA LUXURY FEEL) -->
+  <div id="sitePreloader" class="fixed inset-0 z-[100] bg-white flex flex-col items-center justify-center transition-all duration-700 select-none">
+    
+    <!-- Subtle Background Architectural Blueprint Grid -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#0f38750a_1px,transparent_1px),linear-gradient(to_bottom,#0f38750a_1px,transparent_1px)] bg-[size:32px_32px]"></div>
+
+    <div class="relative z-10 flex flex-col items-center text-center px-4 max-w-sm">
+      
+      <!-- Animated Architectural House & Loft Construction SVG -->
+      <div class="relative w-28 h-28 mb-5 flex items-center justify-center">
+        <!-- Ambient Warm Glow behind the Loft -->
+        <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-[#0F3875]/10 via-[#C59B27]/20 to-transparent blur-xl animate-pulse"></div>
+
+        <svg viewBox="0 0 100 100" class="w-full h-full relative z-10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- House Ground Foundation Line -->
+          <line x1="12" y1="84" x2="88" y2="84" stroke="#0F3875" stroke-width="2.5" stroke-linecap="round" class="loader-line loader-line-1" />
+          
+          <!-- Outer House Walls -->
+          <path d="M22 84V46 M78 84V46" stroke="#0F3875" stroke-width="2.2" stroke-linecap="round" class="loader-line loader-line-2" />
+          
+          <!-- Pitched Main Roof Slope -->
+          <path d="M16 48L50 18L84 48" stroke="#0F3875" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" class="loader-line loader-line-3" />
+          
+          <!-- Loft Dormer Conversion Structure (Rising from the roof) -->
+          <path d="M38 38H62V24L50 18L38 24V38Z" stroke="#C59B27" stroke-width="2" stroke-linejoin="round" class="loader-line loader-line-4" />
+          
+          <!-- Glowing Loft Window Frame -->
+          <rect x="44" y="27" width="12" height="9" rx="1.5" stroke="#0F3875" stroke-width="1.8" class="loader-window-frame" />
+          <path d="M50 27V36 M44 31.5H56" stroke="#0F3875" stroke-width="1.2" class="loader-window-grid" />
+          
+          <!-- Golden Warm Light inside the Loft Window -->
+          <rect x="45" y="28" width="10" height="7" rx="1" fill="#FBBF24" class="loader-window-glow" />
+
+          <!-- Lower Front Door & Ground Windows -->
+          <path d="M43 84V64H57V84" stroke="#0F3875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="loader-line loader-line-5" />
+          <circle cx="53" cy="74" r="1" fill="#C59B27" />
+        </svg>
+      </div>
+
+      <!-- Brand Name & Editorial Typography -->
+      <div class="space-y-1 mb-5">
+        <h2 class="font-serif text-2xl font-bold tracking-tight text-slate-900 leading-none">
+          London Excellent <span class="text-[#C59B27]">Loft</span>
+        </h2>
+        <span class="text-[10px] uppercase font-bold tracking-[0.25em] text-[#0F3875] block">
+          Master Loft Architecture
+        </span>
+      </div>
+
+      <!-- Luxury Progress Indicator Bar -->
+      <div class="w-48 h-1 bg-slate-100 rounded-full overflow-hidden relative mb-3 border border-slate-200/60">
+        <div id="loaderBar" class="absolute inset-y-0 left-0 bg-gradient-to-r from-[#0F3875] via-[#237788] to-[#C59B27] rounded-full transition-all duration-300 w-0"></div>
+      </div>
+
+      <!-- Loading Step Caption -->
+      <div class="flex items-center justify-between w-48 text-[11px] text-slate-500 font-medium">
+        <span id="loaderStatus">Architectural Planning...</span>
+        <span id="loaderPercent" class="font-bold text-[#0F3875]">0%</span>
+      </div>
+
+    </div>
+  </div>
+
   <!-- TOP TRUST & CONTACT BAR -->
   <div class="bg-[#0A254F] text-white text-xs py-2 px-4 border-b border-[#1E3A8A]">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
@@ -222,35 +285,6 @@
           </a>
         </div>
 
-        <!-- Social Proof & Review Ratings Strip -->
-        <div class="pt-4 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 border-t border-slate-200/80 text-reveal delay-4 max-w-2xl">
-          <!-- Trustpilot / Google style -->
-          <div class="flex items-center gap-3">
-            <div class="flex -space-x-2">
-              <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover shadow-sm" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Client" />
-              <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover shadow-sm" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Client" />
-              <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover shadow-sm" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Client" />
-              <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#0F3875] ring-2 ring-white text-xs font-bold text-white shadow-sm">+350</div>
-            </div>
-            <div>
-              <div class="flex items-center gap-1 text-amber-500">
-                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                <span class="ml-1 text-sm font-bold text-slate-900">4.9 / 5.0</span>
-              </div>
-              <p class="text-xs text-slate-600">Over 350+ London Attic &amp; Roofing Projects</p>
-            </div>
-          </div>
-
-          <!-- Certified Trust Badges -->
-          <div class="flex items-center gap-2">
-            <span class="px-2.5 py-1 rounded bg-white/90 text-slate-700 text-xs font-bold border border-slate-200 shadow-sm">Deposit Protected</span>
-            <span class="px-2.5 py-1 rounded bg-emerald-50/90 text-emerald-800 text-xs font-bold border border-emerald-200 shadow-sm">£5M Insurance</span>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -366,7 +400,7 @@
 
         <div class="lg:col-span-5">
           <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-slate-100 group">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="London Excellent Loft Craftsmanship" class="w-full h-[360px] sm:h-[420px] object-cover group-hover:scale-105 transition duration-700" />
+            <img src="loft-conversion.jpg" alt="London Excellent Loft Craftsmanship" class="w-full h-[360px] sm:h-[420px] object-cover group-hover:scale-105 transition duration-700" />
             <div class="absolute inset-0 bg-gradient-to-t from-[#0A254F]/70 via-transparent to-transparent"></div>
             <div class="absolute bottom-5 left-5 right-5 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200 shadow-md flex items-center justify-between">
               <div>
@@ -406,7 +440,7 @@
         <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
           <div>
             <div class="relative h-60 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Loft Conversion London" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <img src="loft-conversion.jpg" alt="Loft Conversion London" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
               <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#0F3875] text-white font-bold text-xs shadow-md">
                 Primary Specialism
               </div>
@@ -415,18 +449,18 @@
               <h3 class="font-serif text-2xl font-bold text-slate-900 group-hover:text-[#0F3875] transition">
                 Luxury Loft Conversions
               </h3>
-              <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              <p class="text-base text-slate-700 mt-2.5 leading-relaxed font-sans min-h-[4.5rem]">
                 Add 1 or 2 expansive double bedrooms and a designer en-suite bathroom. Rear dormers, mansards, hip-to-gables, and Velux conversions across all London boroughs.
               </p>
-              <ul class="mt-4 space-y-2 text-xs font-medium text-slate-700">
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Seamless matching staircase built into lower hall
+              <ul class="mt-4 space-y-2.5 text-sm font-medium text-slate-800">
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0 mt-1"></i> <span class="flex-1">Seamless matching staircase built into lower hall</span>
                 </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Premium acoustic & thermal Kingspan insulation
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0 mt-1"></i> <span class="flex-1">Premium acoustic &amp; thermal Kingspan insulation</span>
                 </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Juliet balconies & electric solar Velux windows
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0 mt-1"></i> <span class="flex-1">Juliet balconies &amp; electric solar Velux windows</span>
                 </li>
               </ul>
             </div>
@@ -452,18 +486,18 @@
               <h3 class="font-serif text-2xl font-bold text-slate-900 group-hover:text-[#0F3875] transition">
                 Expert Roofing Services
               </h3>
-              <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              <p class="text-base text-slate-700 mt-2.5 leading-relaxed font-sans min-h-[4.5rem]">
                 Complete re-roofing, natural Welsh slate, clay tiling, lead flashings, chimney repointing, and seamless cold-applied GRP fibreglass flat roofs.
               </p>
-              <ul class="mt-4 space-y-2 text-xs font-medium text-slate-700">
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> 25-Year slate & tile manufacturer warranties
+              <ul class="mt-4 space-y-2.5 text-sm font-medium text-slate-800">
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0 mt-1"></i> <span class="flex-1">25-Year slate &amp; tile manufacturer warranties</span>
                 </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Seamless jointless GRP flat roofing systems
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0 mt-1"></i> <span class="flex-1">Seamless jointless GRP flat roofing systems</span>
                 </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Chimney stack repair, lead gutters & valleys
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0 mt-1"></i> <span class="flex-1">Chimney stack repair, lead gutters &amp; valleys</span>
                 </li>
               </ul>
             </div>
@@ -489,18 +523,18 @@
               <h3 class="font-serif text-2xl font-bold text-slate-900 group-hover:text-[#0F3875] transition">
                 Bespoke Home Extensions
               </h3>
-              <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              <p class="text-base text-slate-700 mt-2.5 leading-relaxed font-sans min-h-[4.5rem]">
                 Transform your ground floor with garden-facing bi-fold doors, Crittall glass, roof lanterns, and expansive open-plan kitchen dining spaces.
               </p>
-              <ul class="mt-4 space-y-2 text-xs font-medium text-slate-700">
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Rear, side-return and wrap-around layouts
+              <ul class="mt-4 space-y-2.5 text-sm font-medium text-slate-800">
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0 mt-1"></i> <span class="flex-1">Rear, side-return and wrap-around layouts</span>
                 </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Structural steel design & underfloor heating
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0 mt-1"></i> <span class="flex-1">Structural steel design &amp; underfloor heating</span>
                 </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Seamless flow to garden patio & decking
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0 mt-1"></i> <span class="flex-1">Seamless flow to garden patio &amp; decking</span>
                 </li>
               </ul>
             </div>
@@ -711,7 +745,7 @@
   </section>
 
   <!-- ARCHITECTURAL PARALLAX CTA BANNER (CLEAN WHITE/NAVY PALETTE - NO LOUD BLUE OR YELLOW) -->
-  <section id="transformations" class="relative py-20 lg:py-28 overflow-hidden parallax-banner" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2400&q=85');">
+  <section id="transformations" class="relative py-20 lg:py-28 overflow-hidden parallax-banner" style="background-image: url('loft-parallax.jpg');">
     <!-- Sophisticated Architectural Light Translucent Frost Overlay -->
     <div class="absolute inset-0 bg-slate-900/35 backdrop-blur-[2px]"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-white/20 pointer-events-none"></div>
@@ -781,7 +815,7 @@
             01
           </div>
           <h3 class="font-bold text-sm text-slate-900 mb-1.5">Free Site Survey</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">
+          <p class="text-[13.5px] text-slate-600 leading-relaxed">
             We inspect head height, rafter structure, and roof pitch to provide a fixed-price proposal within 24 hours.
           </p>
         </div>
@@ -791,7 +825,7 @@
             02
           </div>
           <h3 class="font-bold text-sm text-slate-900 mb-1.5">Architectural Plans</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">
+          <p class="text-[13.5px] text-slate-600 leading-relaxed">
             Our architectural team creates 2D/3D layouts and structural steel calculations, submitting council notices.
           </p>
         </div>
@@ -800,8 +834,8 @@
           <div class="w-10 h-10 rounded-xl bg-blue-50 text-[#0F3875] font-bold text-lg flex items-center justify-center mb-4">
             03
           </div>
-          <h3 class="font-bold text-sm text-slate-900 mb-1.5">Party Wall & Regs</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">
+          <h3 class="font-bold text-sm text-slate-900 mb-1.5">Party Wall &amp; Regs</h3>
+          <p class="text-[13.5px] text-slate-600 leading-relaxed">
             We assist with party wall notices for adjoining neighbours and schedule building inspector checks.
           </p>
         </div>
@@ -811,7 +845,7 @@
             04
           </div>
           <h3 class="font-bold text-sm text-slate-900 mb-1.5">Clean Build</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">
+          <p class="text-[13.5px] text-slate-600 leading-relaxed">
             Scaffolding erected and materials loaded through the roof, keeping disruption to the living areas below minimal.
           </p>
         </div>
@@ -821,7 +855,7 @@
             05
           </div>
           <h3 class="font-bold text-sm text-slate-900 mb-1.5">10-Yr Guarantee</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">
+          <p class="text-[13.5px] text-slate-600 leading-relaxed">
             Final snagging inspection, building regulations completion certificate, and your 10-year warranty pack.
           </p>
         </div>
@@ -861,7 +895,7 @@
           </div>
           <div class="p-6">
             <h3 class="font-bold text-lg text-slate-900">Victorian Rear Dormer &amp; En-Suite</h3>
-            <p class="text-xs text-slate-600 mt-2">Added 28m² of floor space, double bedroom, custom eaves storage, and walk-in rain shower.</p>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">Added 28m² of floor space, double bedroom, custom eaves storage, and walk-in rain shower.</p>
             <div class="flex items-center justify-between mt-4 pt-4 border-t border-slate-100 text-xs">
               <span class="text-slate-500">Duration: <strong class="text-slate-900">7 Weeks</strong></span>
               <span class="text-emerald-600 font-bold">+24% Value Added</span>
@@ -877,7 +911,7 @@
           </div>
           <div class="p-6">
             <h3 class="font-bold text-lg text-slate-900">Georgian Townhouse Mansard</h3>
-            <p class="text-xs text-slate-600 mt-2">Conservation-compliant mansard with lead dormer cheeks and bespoke timber sash windows.</p>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">Conservation-compliant mansard with lead dormer cheeks and bespoke timber sash windows.</p>
             <div class="flex items-center justify-between mt-4 pt-4 border-t border-slate-100 text-xs">
               <span class="text-slate-500">Duration: <strong class="text-slate-900">9 Weeks</strong></span>
               <span class="text-emerald-600 font-bold">+28% Value Added</span>
@@ -893,7 +927,7 @@
           </div>
           <div class="p-6">
             <h3 class="font-bold text-lg text-slate-900">Heritage Welsh Slate Re-Roofing</h3>
-            <p class="text-xs text-slate-600 mt-2">Complete strip and retile with hand-selected natural Welsh slates, breathable membrane, and lead valleys.</p>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">Complete strip and retile with hand-selected natural Welsh slates, breathable membrane, and lead valleys.</p>
             <div class="flex items-center justify-between mt-4 pt-4 border-t border-slate-100 text-xs">
               <span class="text-slate-500">Duration: <strong class="text-slate-900">2 Weeks</strong></span>
               <span class="text-[#0F3875] font-bold">25-Yr Slate Warranty</span>
@@ -909,7 +943,7 @@
           </div>
           <div class="p-6">
             <h3 class="font-bold text-lg text-slate-900">Semi-Detached Hip-to-Gable Loft</h3>
-            <p class="text-xs text-slate-600 mt-2">Transformed sloped side hip into a light-filled master suite with freestanding bath and double Velux skylights.</p>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">Transformed sloped side hip into a light-filled master suite with freestanding bath and double Velux skylights.</p>
             <div class="flex items-center justify-between mt-4 pt-4 border-t border-slate-100 text-xs">
               <span class="text-slate-500">Duration: <strong class="text-slate-900">8 Weeks</strong></span>
               <span class="text-emerald-600 font-bold">+26% Value Added</span>
@@ -925,7 +959,7 @@
           </div>
           <div class="p-6">
             <h3 class="font-bold text-lg text-slate-900">GRP Fibreglass Dormer Flat Roof</h3>
-            <p class="text-xs text-slate-600 mt-2">Zero-joint cold-applied waterproof system with Kingspan thermal insulation boards.</p>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">Zero-joint cold-applied waterproof system with Kingspan thermal insulation boards.</p>
             <div class="flex items-center justify-between mt-4 pt-4 border-t border-slate-100 text-xs">
               <span class="text-slate-500">Duration: <strong class="text-slate-900">5 Days</strong></span>
               <span class="text-[#0F3875] font-bold">30-Yr Expected Life</span>
@@ -941,7 +975,7 @@
           </div>
           <div class="p-6">
             <h3 class="font-bold text-lg text-slate-900">L-Shaped Two-Bedroom Suite</h3>
-            <p class="text-xs text-slate-600 mt-2">Created two separate rooms for growing children plus an executive home studio over the rear outrigger.</p>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">Created two separate rooms for growing children plus an executive home studio over the rear outrigger.</p>
             <div class="flex items-center justify-between mt-4 pt-4 border-t border-slate-100 text-xs">
               <span class="text-slate-500">Duration: <strong class="text-slate-900">9.5 Weeks</strong></span>
               <span class="text-emerald-600 font-bold">+29% Value Added</span>
@@ -987,7 +1021,7 @@
               <i data-lucide="star" class="w-4 h-4 fill-current"></i>
             </div>
             <h4 class="font-bold text-slate-900 text-sm">"Exceptional craftsmanship &amp; punctual team"</h4>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic">
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed italic">
               "London Excellent Loft transformed our Walthamstow Victorian terrace. The team was extraordinarily punctual, tidy, and finished the rear dormer on the exact agreed date. Our new bedroom and en-suite feel like a 5-star boutique hotel!"
             </p>
           </div>
@@ -1015,7 +1049,7 @@
               <i data-lucide="star" class="w-4 h-4 fill-current"></i>
             </div>
             <h4 class="font-bold text-slate-900 text-sm">"Honest fixed-price with zero surprises"</h4>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic">
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed italic">
               "We had terrible roof leaks before deciding to convert. They replaced the entire slate roof and constructed a full L-shaped dormer. The fixed-price promise was genuine — not a single unexpected surcharge. Outstanding craftsmanship."
             </p>
           </div>
@@ -1040,7 +1074,7 @@
               <i data-lucide="star" class="w-4 h-4 fill-current"></i>
             </div>
             <h4 class="font-bold text-slate-900 text-sm">"Increased our house value significantly"</h4>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic">
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed italic">
               "Instead of spending £60,000 on stamp duty and moving fees to get a bigger house in London, London Excellent Loft gave us two extra rooms and increased our house value by over £130k. Best financial decision we ever made."
             </p>
           </div>
@@ -1155,7 +1189,7 @@
             <span>Do I need planning permission for a loft conversion in London?</span>
             <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-[#0F3875] transition-transform duration-300"></i>
           </button>
-          <div class="faq-content px-6 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
+          <div class="faq-content px-6 pb-5 text-sm sm:text-base text-slate-700 leading-relaxed hidden">
             In most London properties, no! Most rear dormer, hip-to-gable, and rooflight conversions fall under <strong>Permitted Development (PD) rights</strong> (up to 40m³ for terraced homes or 50m³ for semi-detached). If your home is in a Conservation Area or is a flat, full planning permission is required. Our architectural team manages all Certificate of Lawfulness applications on your behalf.
           </div>
         </div>
@@ -1165,7 +1199,7 @@
             <span>How much ceiling height is required to convert an attic?</span>
             <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-[#0F3875] transition-transform duration-300"></i>
           </button>
-          <div class="faq-content px-6 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
+          <div class="faq-content px-6 pb-5 text-sm sm:text-base text-slate-700 leading-relaxed hidden">
             Building regulations require a minimum head height of <strong>2.0 to 2.2 metres</strong> from the existing ceiling joists to the ridge timber. If your current attic height is borderline (e.g. 1.9m – 2.1m), our structural engineers can lower the first-floor ceilings or employ ultra-slim profile steel beams to achieve full building control sign-off.
           </div>
         </div>
@@ -1175,7 +1209,7 @@
             <span>How long does a typical London loft conversion take?</span>
             <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-[#0F3875] transition-transform duration-300"></i>
           </button>
-          <div class="faq-content px-6 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
+          <div class="faq-content px-6 pb-5 text-sm sm:text-base text-slate-700 leading-relaxed hidden">
             On-site construction typically takes <strong>6 to 8 weeks</strong> for a standard dormer or 8 to 10 weeks for an expansive L-shaped mansard. Approximately 75% of the heavy structural work is executed through external scaffolding, meaning minimal disruption to your rooms below until staircase fitting.
           </div>
         </div>
@@ -1185,7 +1219,7 @@
             <span>Can I remain living in my home during the build?</span>
             <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-[#0F3875] transition-transform duration-300"></i>
           </button>
-          <div class="faq-content px-6 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
+          <div class="faq-content px-6 pb-5 text-sm sm:text-base text-slate-700 leading-relaxed hidden">
             Yes! Over 95% of our clients remain comfortably at home throughout the build. We access the roof through external scaffold towers and protect your carpets and furnishings with heavy-duty film. Water, electricity, and heating remain fully operational.
           </div>
         </div>
@@ -1195,7 +1229,7 @@
             <span>What guarantees and insurance cover do you provide?</span>
             <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-[#0F3875] transition-transform duration-300"></i>
           </button>
-          <div class="faq-content px-6 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
+          <div class="faq-content px-6 pb-5 text-sm sm:text-base text-slate-700 leading-relaxed hidden">
             All London Excellent Loft projects are backed by a comprehensive <strong>10-Year Insurance-Backed Structural Guarantee</strong>, full 25-year roofing warranties, and £5,000,000 in Public Liability and Contractors All-Risk insurance coverage.
           </div>
         </div>
@@ -1346,119 +1380,226 @@
     </div>
   </section>
 
-  <!-- LUXURY WHITE / BRITISH NAVY FOOTER (BALANCED, ULTRA-ATTRACTIVE) -->
-  <footer class="bg-[#0A1D37] text-blue-100 text-xs pt-16 pb-12 border-t border-[#16305C]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- ULTRA-PREMIUM ARCHITECTURAL FOOTER (LUXURY DEEP NAVY, GOLD ACCENTS & GLASS CARDS) -->
+  <footer class="relative bg-gradient-to-b from-[#08172E] via-[#051020] to-[#02060D] text-slate-300 text-xs pt-16 pb-12 overflow-hidden border-t border-[#16305C]">
+    
+    <!-- Top Hairline Gold Accent Glow -->
+    <div class="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-[#C59B27] via-50% to-transparent opacity-80"></div>
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-40 bg-[#C59B27]/10 blur-[100px] pointer-events-none rounded-full"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
-      <!-- 4-Column Balanced Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-14">
+      <!-- PRE-FOOTER TRUST & GUARANTEES STRIP -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pb-12 mb-14 border-b border-white/10">
+        <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center justify-center shrink-0">
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-white">10-Yr Guarantee</div>
+            <div class="text-[11px] text-slate-400">Insurance-backed cover</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/20 flex items-center justify-center shrink-0">
+            <i data-lucide="lock" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-white">£5M Liability</div>
+            <div class="text-[11px] text-slate-400">Comprehensive insurance</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center shrink-0">
+            <i data-lucide="file-check-2" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-white">Building Regs</div>
+            <div class="text-[11px] text-slate-400">Full sign-off &amp; certificates</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
+          <div class="w-10 h-10 rounded-xl bg-[#C59B27]/10 text-[#C59B27] border border-[#C59B27]/20 flex items-center justify-center shrink-0">
+            <i data-lucide="pound-sterling" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-white">Fixed-Price Quote</div>
+            <div class="text-[11px] text-slate-400">Zero hidden costs guaranteed</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN 4-COLUMN ARCHITECTURAL GRID -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-14">
         
-        <!-- Column 1: Brand, Address & Trust (4 cols) -->
-        <div class="lg:col-span-4 space-y-4">
-          <a href="#" class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-white text-[#0F3875] flex items-center justify-center shadow-md shrink-0">
-              <i data-lucide="home" class="w-5 h-5"></i>
+        <!-- Column 1: Brand Hub & Interactive Office Card (4 cols) -->
+        <div class="lg:col-span-4 space-y-5">
+          <a href="#" class="inline-flex items-center gap-3 group">
+            <div class="w-11 h-11 rounded-2xl bg-white text-[#0F3875] flex items-center justify-center shadow-lg shadow-black/30 group-hover:scale-105 transition shrink-0">
+              <i data-lucide="home" class="w-6 h-6"></i>
             </div>
             <div class="flex flex-col">
-              <span class="font-serif text-xl font-bold text-white leading-none whitespace-nowrap">
+              <span class="font-serif text-2xl font-bold text-white leading-none whitespace-nowrap">
                 London Excellent <span class="text-[#C59B27]">Loft</span>
               </span>
-              <span class="text-[9px] uppercase tracking-widest text-blue-300 font-bold mt-1">
-                Loft Conversions &middot; Roofing &middot; Extensions
+              <span class="text-[10px] uppercase tracking-widest text-slate-400 font-bold mt-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Master Craftsmanship &middot; Est. 2011
               </span>
             </div>
           </a>
 
-          <p class="text-xs text-blue-200/90 leading-relaxed max-w-sm">
-            London's premier loft conversion, roofing and home extension specialists with over 15 years of master craftsmanship. Fully certified by building control and backed by a comprehensive 10-year insurance guarantee.
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            London’s premier bespoke loft conversion, architectural roofing and luxury home extension specialists. 15+ years transforming attic air into extraordinary residential living space.
           </p>
 
-          <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1.5 text-xs text-blue-200">
-            <div class="flex items-center gap-2 text-white font-semibold">
-              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#C59B27]"></i>
-              163 Boundary Road, London E17 8NG, UK
+          <!-- Glass Contact Information Card -->
+          <div class="p-4 rounded-2xl bg-white/[0.04] backdrop-blur-md border border-white/10 space-y-2.5 text-xs text-slate-300 hover:border-[#C59B27]/40 transition group">
+            <div class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-[#C59B27] shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="text-white font-semibold block">Headquarters:</strong>
+                <span class="text-slate-400">163 Boundary Road, Walthamstow, London E17 8NG</span>
+              </div>
             </div>
-            <div class="flex items-center gap-2">
-              <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-400"></i>
-              <a href="tel:07459488186" class="hover:text-white font-bold text-white">07459 488186</a>
-              <span class="text-blue-300/60">&middot; Mon &ndash; Sat: 08:00 &ndash; 17:00</span>
+            <div class="flex items-start gap-2.5 pt-1 border-t border-white/5">
+              <i data-lucide="phone-call" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+              <div>
+                <a href="tel:07459488186" class="text-white font-bold hover:text-emerald-300 transition text-sm">07459 488186</a>
+                <span class="text-emerald-400/90 text-[11px] block font-medium">&middot; Mon &ndash; Sat: 08:00 &ndash; 17:00 (Direct Line)</span>
+              </div>
             </div>
-            <div class="flex items-center gap-2">
-              <i data-lucide="mail" class="w-3.5 h-3.5 text-amber-300"></i>
-              <a href="mailto:Info@londonexcellentloft.co.uk" class="hover:text-white">Info@londonexcellentloft.co.uk</a>
+            <div class="flex items-start gap-2.5 pt-1 border-t border-white/5">
+              <i data-lucide="mail" class="w-4 h-4 text-amber-300 shrink-0 mt-0.5"></i>
+              <div>
+                <a href="mailto:Info@londonexcellentloft.co.uk" class="text-slate-300 hover:text-white transition">Info@londonexcellentloft.co.uk</a>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Column 2: Loft Conversions (3 cols) -->
-        <div class="lg:col-span-3 space-y-3">
-          <h4 class="font-bold text-white text-xs uppercase tracking-wider border-b border-white/10 pb-2">
-            Loft Conversions
-          </h4>
-          <ul class="space-y-2 text-xs text-blue-200">
-            <li><a href="#types" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3 h-3 text-[#C59B27]"></i> Rear Dormer Conversions</a></li>
-            <li><a href="#types" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3 h-3 text-[#C59B27]"></i> Mansard Loft Conversions</a></li>
-            <li><a href="#types" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3 h-3 text-[#C59B27]"></i> Hip-to-Gable Conversions</a></li>
-            <li><a href="#types" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3 h-3 text-[#C59B27]"></i> L-Shaped Conversions</a></li>
-            <li><a href="#types" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3 h-3 text-[#C59B27]"></i> Velux Skylight Conversions</a></li>
-            <li><a href="#calculator" class="text-amber-300 font-bold hover:underline transition flex items-center gap-1.5 mt-2"><i data-lucide="calculator" class="w-3 h-3"></i> Calculate Conversion Cost</a></li>
+        <div class="lg:col-span-3 space-y-4">
+          <div>
+            <span class="text-[10px] font-bold text-[#C59B27] uppercase tracking-widest block mb-1">01 / Architectural Works</span>
+            <h4 class="font-serif text-lg font-bold text-white">
+              Loft Conversions
+            </h4>
+          </div>
+          <ul class="space-y-2.5 text-xs text-slate-300">
+            <li>
+              <a href="#types" class="hover:text-white transition flex items-center gap-2 group">
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-[#C59B27] group-hover:translate-x-1 transition shrink-0"></i>
+                <span>Rear Dormer Conversions</span>
+              </a>
+            </li>
+            <li>
+              <a href="#types" class="hover:text-white transition flex items-center gap-2 group">
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-[#C59B27] group-hover:translate-x-1 transition shrink-0"></i>
+                <span>Mansard Loft Conversions</span>
+              </a>
+            </li>
+            <li>
+              <a href="#types" class="hover:text-white transition flex items-center gap-2 group">
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-[#C59B27] group-hover:translate-x-1 transition shrink-0"></i>
+                <span>Hip-to-Gable Conversions</span>
+              </a>
+            </li>
+            <li>
+              <a href="#types" class="hover:text-white transition flex items-center gap-2 group">
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-[#C59B27] group-hover:translate-x-1 transition shrink-0"></i>
+                <span>L-Shaped Dormer Suites</span>
+              </a>
+            </li>
+            <li>
+              <a href="#types" class="hover:text-white transition flex items-center gap-2 group">
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-[#C59B27] group-hover:translate-x-1 transition shrink-0"></i>
+                <span>Velux &amp; Rooflight Conversions</span>
+              </a>
+            </li>
           </ul>
+
+          <!-- Calculator Highlight Callout -->
+          <div class="pt-2">
+            <a href="#calculator" class="p-3 rounded-xl bg-gradient-to-r from-amber-500/10 to-[#0F3875]/20 border border-amber-500/20 hover:border-amber-400/40 transition flex items-center justify-between group">
+              <div class="flex items-center gap-2">
+                <i data-lucide="calculator" class="w-4 h-4 text-[#C59B27]"></i>
+                <span class="text-xs font-bold text-amber-300 group-hover:text-white transition">Loft Cost Calculator</span>
+              </div>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-amber-300 group-hover:translate-x-1 transition"></i>
+            </a>
+          </div>
         </div>
 
         <!-- Column 3: Roofing & Extensions (2 cols) -->
-        <div class="lg:col-span-2 space-y-3">
-          <h4 class="font-bold text-white text-xs uppercase tracking-wider border-b border-white/10 pb-2">
-            Roofing &amp; Works
-          </h4>
-          <ul class="space-y-2 text-xs text-blue-200">
-            <li><a href="#services" class="hover:text-white transition">Welsh Slate Roofing</a></li>
-            <li><a href="#services" class="hover:text-white transition">GRP Fibreglass Roofs</a></li>
-            <li><a href="#services" class="hover:text-white transition">Chimney &amp; Lead Valleys</a></li>
-            <li><a href="#services" class="hover:text-white transition">Single Storey Extensions</a></li>
-            <li><a href="#services" class="hover:text-white transition">Kitchen Outriggers</a></li>
-            <li><a href="#process" class="hover:text-white transition">5-Step Build Journey</a></li>
+        <div class="lg:col-span-2 space-y-4">
+          <div>
+            <span class="text-[10px] font-bold text-[#C59B27] uppercase tracking-widest block mb-1">02 / Specialist Craft</span>
+            <h4 class="font-serif text-lg font-bold text-white">
+              Roofing &amp; Works
+            </h4>
+          </div>
+          <ul class="space-y-2.5 text-xs text-slate-300">
+            <li><a href="#services" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="minus" class="w-2.5 h-2.5 text-slate-500"></i> Welsh Slate Roofing</a></li>
+            <li><a href="#services" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="minus" class="w-2.5 h-2.5 text-slate-500"></i> GRP Fibreglass Roofs</a></li>
+            <li><a href="#services" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="minus" class="w-2.5 h-2.5 text-slate-500"></i> Lead Flashings &amp; Valleys</a></li>
+            <li><a href="#services" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="minus" class="w-2.5 h-2.5 text-slate-500"></i> Ground Floor Extensions</a></li>
+            <li><a href="#services" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="minus" class="w-2.5 h-2.5 text-slate-500"></i> Kitchen Outriggers</a></li>
+            <li><a href="#process" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="minus" class="w-2.5 h-2.5 text-slate-500"></i> 5-Step Build Journey</a></li>
           </ul>
         </div>
 
-        <!-- Column 4: Coverage & Guarantees (3 cols) -->
-        <div class="lg:col-span-3 space-y-3">
-          <h4 class="font-bold text-white text-xs uppercase tracking-wider border-b border-white/10 pb-2">
-            London Coverage &amp; Trust
-          </h4>
-          <div class="space-y-2.5 text-xs text-blue-200">
-            <p class="leading-relaxed">
-              Serving all 32 London Boroughs including Waltham Forest, Hackney, Islington, Camden, Richmond, Wandsworth, and Kensington.
-            </p>
-            <div class="flex items-center gap-2 pt-1">
-              <div class="px-2.5 py-1 rounded bg-white/10 text-white font-bold text-[11px] border border-white/10">10-Yr Guarantee</div>
-              <div class="px-2.5 py-1 rounded bg-white/10 text-emerald-300 font-bold text-[11px] border border-white/10">£5M Liability</div>
-            </div>
-            <div class="flex items-center gap-1.5 text-amber-300 text-xs font-semibold pt-1">
-              <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
-              <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
-              <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
-              <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
-              <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
-              <span class="text-white font-bold ml-1">4.9 / 5.0 (350+ Projects)</span>
-            </div>
+        <!-- Column 4: Coverage, Reputation & Booking (3 cols) -->
+        <div class="lg:col-span-3 space-y-4">
+          <div>
+            <span class="text-[10px] font-bold text-[#C59B27] uppercase tracking-widest block mb-1">03 / Greater London</span>
+            <h4 class="font-serif text-lg font-bold text-white">
+              Coverage &amp; Trust
+            </h4>
           </div>
+
+          <!-- Verified Review Rating Card -->
+          <div class="p-3.5 rounded-2xl bg-gradient-to-br from-white/[0.06] to-white/[0.02] border border-white/10 shadow-lg space-y-2">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-1 text-amber-400">
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-bold text-[10px] border border-emerald-500/30">Verified 4.9★</span>
+            </div>
+            <div class="text-white font-bold text-xs">Over 350+ Projects Completed</div>
+            <p class="text-[11px] text-slate-400 leading-relaxed">
+              Serving Waltham Forest, Hackney, Islington, Camden, Richmond, Wandsworth, and all 32 London Boroughs.
+            </p>
+          </div>
+
+          <!-- Quick Modal Survey Button -->
+          <button onclick="openQuoteModal()" class="w-full py-3 rounded-xl bg-gradient-to-r from-[#0F3875] via-[#1E4DB7] to-[#0F3875] hover:from-[#1E4DB7] hover:to-[#0F3875] text-white font-bold text-xs uppercase tracking-wider shadow-md hover:shadow-lg transition flex items-center justify-center gap-2 border border-white/20">
+            <i data-lucide="clipboard-check" class="w-4 h-4"></i>
+            <span>Book Site Survey</span>
+          </button>
         </div>
 
       </div>
 
-      <!-- Copyright Sub-Footer Bar -->
-      <div class="border-t border-[#16305C] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11.5px] text-blue-300/80">
+      <!-- COPYRIGHT SUB-FOOTER BAR -->
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
         <div>
-          Copyright &copy; 2026 London Excellent Loft. All Rights Reserved &middot; 163 Boundary Road, London E17 8NG.
+          &copy; 2026 London Excellent Loft Ltd. All Rights Reserved &middot; 163 Boundary Road, London E17 8NG.
         </div>
-        <div class="flex items-center gap-5">
+        <div class="flex items-center gap-4">
           <a href="#" class="hover:text-white transition">Privacy Policy</a>
           <span>&middot;</span>
           <a href="#" class="hover:text-white transition">Terms of Business</a>
           <span>&middot;</span>
           <a href="#" class="hover:text-white transition">Cookie Policy</a>
           <span>&middot;</span>
-          <a href="#" class="hover:text-white font-bold flex items-center gap-1 transition">
+          <a href="#" class="hover:text-white font-semibold flex items-center gap-1 transition text-slate-300 hover:text-amber-300">
             Back to Top <i data-lucide="arrow-up" class="w-3 h-3"></i>
           </a>
         </div>

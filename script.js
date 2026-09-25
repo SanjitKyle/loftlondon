@@ -1,5 +1,8 @@
 // JavaScript for London Excellent Loft Homepage Interactivity (White Architectural Theme)
 
+// Launch Architectural Home Preloader immediately
+initPreloader();
+
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initLoftTabs();
@@ -38,7 +41,7 @@ const loftData = {
   dormer: {
     title: "Rear Dormer Loft Conversion",
     tagline: "The most popular, cost-effective conversion across London terraced & semi-detached homes.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
+    image: "loft-conversion.jpg",
     spaceGain: "+25 to 35 m² of habitable floor area",
     timeline: "6 - 8 Weeks average construction",
     planning: "Permitted Development (No full planning required in 90% of cases)",
@@ -498,4 +501,69 @@ function initScrollTextReveal() {
   });
 
   reveals.forEach(el => observer.observe(el));
+}
+
+/* ========================================================
+   9. ARCHITECTURAL HOME PRELOADER
+   ======================================================== */
+function initPreloader() {
+  const preloader = document.getElementById('sitePreloader');
+  if (!preloader) return;
+
+  const bar = document.getElementById('loaderBar');
+  const percentText = document.getElementById('loaderPercent');
+  const statusText = document.getElementById('loaderStatus');
+
+  const steps = [
+    { at: 28, text: "Structural Feasibility..." },
+    { at: 58, text: "Architectural Drawings..." },
+    { at: 85, text: "Velux & Roofline Craft..." },
+    { at: 100, text: "Welcome to London Lofts" }
+  ];
+
+  let progress = 0;
+  let isComplete = false;
+
+  function finishLoader() {
+    if (isComplete) return;
+    isComplete = true;
+    progress = 100;
+    if (bar) bar.style.width = '100%';
+    if (percentText) percentText.textContent = '100%';
+    if (statusText) statusText.textContent = 'Welcome to London Lofts';
+
+    setTimeout(() => {
+      preloader.classList.add('is-hidden');
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 650);
+    }, 250);
+  }
+
+  const interval = setInterval(() => {
+    if (isComplete) {
+      clearInterval(interval);
+      return;
+    }
+    progress += Math.floor(Math.random() * 12) + 8;
+    if (progress >= 100) {
+      progress = 100;
+      clearInterval(interval);
+      finishLoader();
+      return;
+    }
+
+    if (bar) bar.style.width = progress + '%';
+    if (percentText) percentText.textContent = progress + '%';
+
+    const currentStep = steps.find(s => progress <= s.at);
+    if (currentStep && statusText) {
+      statusText.textContent = currentStep.text;
+    }
+  }, 65);
+
+  // Safety trigger on window load with minimum display for smooth branding
+  window.addEventListener('load', () => {
+    setTimeout(finishLoader, 850);
+  });
 }
